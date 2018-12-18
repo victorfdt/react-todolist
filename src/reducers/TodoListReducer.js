@@ -5,8 +5,8 @@ const TodoListReducer = (state = initialState, action ) => {
     switch (action.type) {
         case 'ADD_TODO':
             return [
-                ...state,
-                { name: action.name }
+                { name: action.name },
+                ...state
                 ]
         case 'CLEAR_TODO':
             return []
