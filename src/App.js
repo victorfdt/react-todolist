@@ -3,6 +3,7 @@ import TodoList from './component/TodoList';
 import RootComponent from './component/RootComponent';
 import TestComponent from './component/TestComponent';
 import Job from './component/Job';
+import Login from './component/Login';
 
 import './App.css';
 import { Route, Switch  } from 'react-router-dom';
@@ -34,6 +35,11 @@ class App extends Component {
         <Route 
           path="/Job"
           component={Job}
+        />
+        
+        <Route 
+          path="/Login"
+          component={Login}
         />
       </Switch>
       
